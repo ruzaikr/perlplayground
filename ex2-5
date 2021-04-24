@@ -1,0 +1,7 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+use feature 'say';
+
+my @arr = ('alpha', 'omega');
+say scalar('one', 'two', 'three', 'four', @arr);

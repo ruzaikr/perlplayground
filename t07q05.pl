@@ -11,7 +11,7 @@ my $string2 = $ARGV[1];
 
 my $line = <$fh_randomtext>;
 while (defined($line)) {
-    $line =~ s/($string1.*$string2)/\U$1\E/g;
+    $line =~ s/($string1.*?$string2)/\U$1\E/g;
     print $line;
     $line = <$fh_randomtext>
 }

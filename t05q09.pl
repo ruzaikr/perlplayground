@@ -35,3 +35,4 @@ sub wantchecker {
 wantchecker();
 say '$INFO = '.$INFO;
 
+m/\wSydney\W/i

@@ -19,3 +19,6 @@ here because it is guaranteed that line 451 will never be reached.
 #### #2.3 lib/Bookings/User.pm [Gitlab link](https://gitlab.booking.com/core/main/blob/f81728619cc7977202bd5a22f9bdb20dfb18218f/lib/Bookings/User.pm?r=h.d.b.c#L3263)
 It is safe to remove this `if` construct because it will never be true.
 
+#### #2.4 lib/Bookings/Apache/BaseAction/Simple.pm [Gitlab link](https://gitlab.booking.com/core/main/blob/f81728619cc7977202bd5a22f9bdb20dfb18218f/lib/Bookings/Apache/BaseAction/Simple.pm?r=h.d.b.c#L1412)
+Removed line 1412 because `$rd->{bbtool_company_has_business_rate_available}` will always be non-existent
+
